@@ -1,0 +1,25 @@
+FLOWERS AND TEMPLES 
+
+I have x flowers initially and n temples
+I will visit n temples and every time i visit , my flowers get multiplied by 2 and subtracted from a number y (which is constant for all visits)
+at the end of visiting n temples , my x becomes zero 
+
+find values of x (initial ) and y
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Scanner obj = new Scanner(System.in);
+	    int n = obj.nextInt();
+	    
+	    int  y = 1;
+	    for(int i=0;i<n;i++)
+	    {
+	        y = y*2;
+	    }
+	    int x = y - 1;
+	    System.out.println(x+" "+y);
+	}
+}
